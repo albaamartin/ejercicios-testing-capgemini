@@ -4,14 +4,8 @@ public class ProgramaEmpleado {
 
     public static void main(String[] args){
 
-        Empleado e =new Empleado();
-        e = new Empleado("Ana","Domenech","25763894Q","673896524", 1500.50, "Tester");
-        System.out.println(e.getNombre());
-        System.out.println(e.getApellidos());
-        System.out.println(e.getDni());
-        System.out.println(e.getTlf());
-        System.out.println(e.getSueldo());
-        System.out.println(e.getCargo());
+        Empleado e = new Empleado("Maria","Lopez","34567894T", "765489022", 1500.0, "Tester");
+        System.out.println(e);
         e.setNombre("Lucia");
         e.setApellidos("Martin");
         e.setDni("76589034F");
@@ -24,8 +18,7 @@ public class ProgramaEmpleado {
         System.out.println(e.getTlf());
         System.out.println(e.getSueldo());
         System.out.println(e.getCargo());
-        Jefe j = new Jefe();
-        j = new Jefe("Juan","Jerez","24367890G","678335566",2300.75, "Tester","Testing", 25);
+        Jefe j = new Jefe("Alba", "Martin", "25789356R","678990023", 1500.0,"Tester", "Testing", 25 );
         System.out.println(j.getNombre());
         System.out.println(j.getApellidos());
         System.out.println(j.getDni());
@@ -36,7 +29,10 @@ public class ProgramaEmpleado {
         System.out.println(j.getNumEmpleados());
         System.out.println(e.toString());
         System.out.println(j.toString());
-
+        Persona p = new Persona("Maria","Lopez","34567894T", "765489022");
+        System.out.println(p);
+        Currito c = new Currito("Alba", "Martin", "25789356R","678990023", 1500.0,"Tester", "BBVA");
+        System.out.println(c);
 
     }
 }

@@ -7,7 +7,7 @@ public class Sala {
 
     public Sala() {
         this.dimension = "";
-        this.aireAcondicionado = true;
+        this.aireAcondicionado= true;
     }
 
     public Sala(String dimension, boolean aireAcondicionado) {

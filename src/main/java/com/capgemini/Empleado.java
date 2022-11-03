@@ -34,4 +34,15 @@ public class Empleado extends Persona{
     public String getCargo() {
         return cargo;
     }
+
+    public String toString() {
+        return "Empleado{" +
+                "nombre=" + getNombre()+
+                ", apellidos=" + getApellidos()+
+                ", dni=" + getDni()+
+                ", tlf=" + getTlf()+
+                ", sueldo=" + sueldo +
+                ", cargo='" + cargo + '\'' +
+                '}';
+    }
 }

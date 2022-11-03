@@ -34,6 +34,9 @@ public class ProgramaEmpleado {
         System.out.println(j.getCargo());
         System.out.println(j.getDepartamento());
         System.out.println(j.getNumEmpleados());
+        System.out.println(e.toString());
+        System.out.println(j.toString());
+
 
     }
 }

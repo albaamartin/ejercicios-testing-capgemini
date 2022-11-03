@@ -33,4 +33,17 @@ public class Jefe extends Empleado{
         this.numEmpleados = numEmpleados;
     }
 
+    @Override
+    public String toString() {
+        return "Jefe{" +
+                "nombre=" + getNombre() +
+                ", apellidos=" + getApellidos()+
+                ", dni=" + getDni() +
+                ", tlf=" + getTlf() +
+                ", departamento='" + departamento + '\'' +
+                ", numEmpleados=" + numEmpleados +
+                ", sueldo=" + sueldo +
+                ", cargo='" + cargo + '\'' +
+                '}';
+    }
 }

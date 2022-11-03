@@ -21,4 +21,16 @@ public class Currito extends Empleado{
     public void setProyecto(String proyecto) {
         this.proyecto = proyecto;
     }
+
+    @Override
+    public String toString() {
+        return "Currito{" +
+                "nombre=" + getNombre() +
+                ", apellidos=" + getApellidos() +
+                ", dni=" + getDni() +
+                ", tlf=" + getTlf() +
+                ", sueldo=" + sueldo +
+                ", cargo='" + cargo +
+                ", proyecto=" + proyecto+ "}";
+    }
 }

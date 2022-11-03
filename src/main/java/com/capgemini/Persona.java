@@ -53,7 +53,6 @@ public class Persona {
         this.tlf = tlf;
     }
 
-    @Override
     public String toString() {
         return "Persona{" +
                 "nombre='" + nombre + '\'' +

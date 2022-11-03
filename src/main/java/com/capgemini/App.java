@@ -50,6 +50,14 @@ public class App
         r = Calcu.divi(2.5F,2.5F);
         System.out.println(r);
 
-
+        Persona p = new Persona();
+        p=new Persona("Ana","Domenech");
+        System.out.println(p.getNombre());
+        System.out.println(p.getApellidos());
+        Profe pf = new Profe();
+        pf =new Profe("David", "Vaquero", "Testing");
+        System.out.println(pf.getNombre());
+        System.out.println(pf.getApellidos());
+        System.out.println(pf.getAsignatura());
     }
 }

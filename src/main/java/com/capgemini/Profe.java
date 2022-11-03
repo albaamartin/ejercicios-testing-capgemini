@@ -13,9 +13,10 @@ public class Profe extends Persona {
         this.asignatura = "";
     }
     //Generate Constructor
-    public Profe(String nombre, String apellidos, String asignatura) {
 
-        super(nombre, apellidos);
+
+    public Profe(String nombre, String apellidos, String dni, String tlf, String asignatura) {
+        super(nombre, apellidos, dni, tlf);
         this.asignatura = asignatura;
     }
 

@@ -51,13 +51,15 @@ public class App
         System.out.println(r);
 
         Persona p = new Persona();
-        p=new Persona("Ana","Domenech");
+        p=new Persona("Ana","Domenech","765234784T","657832166");
         System.out.println(p.getNombre());
         System.out.println(p.getApellidos());
         Profe pf = new Profe();
-        pf =new Profe("David", "Vaquero", "Testing");
+        pf =new Profe("David", "Vaquero", "25567896G","678905633","Testing");
         System.out.println(pf.getNombre());
         System.out.println(pf.getApellidos());
         System.out.println(pf.getAsignatura());
+
+
     }
 }

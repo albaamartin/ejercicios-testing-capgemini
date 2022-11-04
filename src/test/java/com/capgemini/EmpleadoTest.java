@@ -1,10 +1,12 @@
 package com.capgemini;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@Tag("unit")
 public class EmpleadoTest {
 
     Empleado e = new Empleado();
@@ -41,25 +43,10 @@ public class EmpleadoTest {
 
     }
 
-    @Test
 
-    public void testSetterAndGetterEmpleado(){
-        this.e.setNombre("Maria");
-        this.e.setApellidos("Lopez");
-        this.e.setDni("34567894T");
-        this.e.setTlf("765489022");
-        this.e.setSueldo(1200.0);
-        this.e.setCargo("Desarrollador");
-        assertEquals("Maria", this.e.getNombre());
-        assertEquals("Lopez", this.e.getApellidos());
-        assertEquals("34567894T", this.e.getDni());
-        assertEquals("765489022", this.e.getTlf());
-        assertEquals(1200.0, this.e.getSueldo());
-        assertEquals("Desarrollador", this.e.getCargo());
-    }
 
     @Test
-
+    @DisplayName("Empleado{nombre=Maria, apellidos=Lopez, dni=34567894T, tlf=765489022, sueldo=1500.0, cargo='Tester'}")
     public void testToStringEmpleado(){
 
         Empleado e = new Empleado("Maria","Lopez","34567894T", "765489022", 1500.0, "Tester");

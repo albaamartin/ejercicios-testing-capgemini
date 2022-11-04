@@ -1,10 +1,13 @@
 package com.capgemini;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Tag("unit")
 public class CurritoTest {
 
     Currito c = new Currito();
@@ -15,7 +18,7 @@ public class CurritoTest {
     }
 
     @Test
-
+    @DisplayName("Deberia estar vacio")
     public void testJefeSinParametros(){
         assertEquals("", this.c.getNombre());
         assertEquals("", this.c.getApellidos());
@@ -25,12 +28,10 @@ public class CurritoTest {
         assertEquals("", this.c.getCargo());
         assertEquals("", this.c.proyecto);
 
-
-
     }
 
     @Test
-
+    @DisplayName("Deberia insertar los valores dados")
     public void testCurritoConParametros(){
         Currito c = new Currito("Alba", "Martin", "25789356R","678990023", 1500.0,"Tester", "BBVA");
         assertEquals("Alba", c.getNombre());
@@ -44,7 +45,7 @@ public class CurritoTest {
     }
 
     @Test
-
+    @DisplayName("Deberia cambiar los valores por los nuevos")
     public void testSetterAndGetterCurrito(){
         this.c.setNombre("Maria");
         this.c.setApellidos("Lopez");
@@ -64,7 +65,7 @@ public class CurritoTest {
     }
 
     @Test
-
+    @DisplayName("Currito{nombre=Alba, apellidos=Martin, dni=25789356R, tlf=678990023, sueldo=1500.0, cargo='Tester, proyecto=BBVA")
     public void testToStringCurrito(){
 
         Currito c = new Currito("Alba", "Martin", "25789356R","678990023", 1500.0,"Tester", "BBVA");

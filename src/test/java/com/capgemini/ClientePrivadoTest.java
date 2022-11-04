@@ -3,7 +3,7 @@ package com.capgemini;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@Tag("unit")
 public class ClientePrivadoTest {
 
     //@BeforeAll before todos los tests

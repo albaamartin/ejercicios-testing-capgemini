@@ -16,7 +16,6 @@
     <maven.compiler.target>19</maven.compiler.target>
   </properties>
 
-
   <dependencies>
     <dependency>
       <groupId>com.googlecode.json-simple</groupId>
@@ -27,6 +26,12 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
       <version>5.9.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>3.12.4</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

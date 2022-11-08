@@ -1,4 +1,4 @@
-package integracionMockito;
+package com.capgemini.integracionMockito;
 
 import com.capgemini.integracionMockito.Proceso;
 import org.junit.jupiter.api.BeforeEach;

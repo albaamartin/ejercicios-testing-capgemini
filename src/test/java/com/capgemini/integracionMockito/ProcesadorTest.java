@@ -1,4 +1,4 @@
-package integracionMockito;
+package com.capgemini.integracionMockito;
 
 import com.capgemini.integracionMockito.Procesador;
 import com.capgemini.integracionMockito.Proceso;

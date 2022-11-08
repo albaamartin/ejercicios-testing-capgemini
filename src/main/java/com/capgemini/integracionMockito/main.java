@@ -1,6 +1,4 @@
-package com.capgemini.integracion;
-
-import com.capgemini.Perro;
+package com.capgemini.integracionMockito;
 
 public class main {
 

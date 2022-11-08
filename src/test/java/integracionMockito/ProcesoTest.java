@@ -1,38 +1,39 @@
-package integracion;
+package integracionMockito;
 
-import com.capgemini.integracion.Procesador;
-import com.capgemini.integracion.Proceso;
+import com.capgemini.integracionMockito.Proceso;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ProcesoTest {
-    Proceso p = new Proceso();
+    Proceso proceso = new Proceso();
 
     @BeforeEach
     public void setup(){
-        this.p = new Proceso();
+        proceso = new Proceso();
     }
     @Test
 
     public void testProcesadorSinParametros(){
 
-        assertEquals("", p.getNombre());
+        assertNotNull(proceso.getNombre());
+        assertEquals("", proceso.getNombre());
 
     }
 
     @Test
 
     public void testProcesadorConParametros(){
-        Proceso p = new Proceso("Nombre");
-        assertEquals("Nombre", p.getNombre());
+        Proceso p = new Proceso("nombre");
+        assertNotNull(p.getNombre());
+        assertEquals("nombre", p.getNombre());
     }
 
     @Test
     public void testSetterAndGetterProcesador() {
-        this.p.setNombre("N");
-        assertEquals("N", this.p.getNombre());
+        this.proceso.setNombre("N");
+        assertEquals("N", this.proceso.getNombre());
     }
 
     @Test
@@ -40,4 +41,5 @@ public class ProcesoTest {
         Proceso p = new Proceso("Automatizacion");
         assertEquals("proceso{nombre='Automatizacion'}", p.toString() );
     }
+
 }

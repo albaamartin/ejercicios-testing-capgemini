@@ -1,0 +1,84 @@
+{
+  "id": "a7929842-26c6-41aa-9831-6df5ee4ee23d",
+  "version": "2.0",
+  "name": "freeCodeCamp",
+  "url": "https://www.freecodecamp.org",
+  "tests": [{
+    "id": "b479b163-71c8-4737-a134-4f18f12b7bd7",
+    "name": "NavegacionChrome",
+    "commands": [{
+      "id": "aa736fd4-74d0-458e-8b1b-9d83dc0bfb96",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0011810-37f1-4e94-99aa-2b9623aefe92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c7a1ecb-9b86-4494-b8f3-5df3a9fbde98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu-btn-text",
+      "targets": [
+        ["css=.menu-btn-text", "css:finder"],
+        ["xpath=//button[@id='toggle-button-nav']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5ec951b-ded0-4f92-8f18-a9d7159f6ab1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Curriculum",
+      "targets": [
+        ["linkText=Curriculum", "linkText"],
+        ["css=.nav-list > li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Curriculum')]", "xpath:link"],
+        ["xpath=//nav[@id='universal-nav']/div[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/learn')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Curriculum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3211ca6-8470-48e5-bab3-e35162eac12c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.intro-description",
+      "targets": [
+        ["css=.intro-description", "css:finder"],
+        ["xpath=//main[@id='learn-app-wrapper']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa05e709-2b10-4aa2-98c0-c5134cbd0164",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//main[@id='learn-app-wrapper']/div/div/div/div[3]/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Please slow down and read this.')]", "xpath:innerText"]
+      ],
+      "value": "Please slow down and read this."
+    }]
+  }],
+  "suites": [{
+    "id": "6cf5177c-ba1f-48f0-951d-adfc90b9d3fc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b479b163-71c8-4737-a134-4f18f12b7bd7"]
+  }],
+  "urls": ["https://www.freecodecamp.org/"],
+  "plugins": []
+}

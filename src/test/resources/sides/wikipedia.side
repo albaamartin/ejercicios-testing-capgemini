@@ -1,0 +1,100 @@
+{
+  "id": "6244b142-f0e8-4931-a4cc-10cd3a174af2",
+  "version": "2.0",
+  "name": "wikipedia",
+  "url": "https://es.wikipedia.org",
+  "tests": [{
+    "id": "80a1ccd4-59f4-4e2e-bf3b-10ef8c22b67a",
+    "name": "NavegacionFirefox",
+    "commands": [{
+      "id": "40de827a-42d2-49cc-a820-f0a930951136",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ba4f975-bdf4-4200-8d90-2aee1e98abbb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03e68d22-3af4-4416-b10d-19bbdb2ef307",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4fefe4c-d1d9-499b-ac3c-a8770bf00717",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "JUnit"
+    }, {
+      "id": "e3a03d7f-6c36-46b0-9cf1-d75eca303e92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.suggestions-result-current > .highlight",
+      "targets": [
+        ["css=.suggestions-result-current > .highlight", "css:finder"],
+        ["xpath=//a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'JUnit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bad9ddf-171b-47c2-a046-f1fa82591bfb",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'JUnit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21795fb5-8231-4d3e-8a8b-15f3d8a91bf0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mw-page-title-main",
+      "targets": [
+        ["css=.mw-page-title-main", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'JUnit')]", "xpath:innerText"]
+      ],
+      "value": "JUnit"
+    }]
+  }],
+  "suites": [{
+    "id": "969dbf95-9a62-45d5-86c8-21f453774356",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80a1ccd4-59f4-4e2e-bf3b-10ef8c22b67a"]
+  }],
+  "urls": ["https://es.wikipedia.org/"],
+  "plugins": []
+}

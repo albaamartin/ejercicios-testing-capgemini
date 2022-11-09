@@ -1,0 +1,71 @@
+{
+  "id": "51656018-182f-4e33-b628-5cebda551cd9",
+  "version": "2.0",
+  "name": "CursosDeDesarrollo",
+  "url": "https://cursosdedesarrollo.com",
+  "tests": [{
+    "id": "ea494260-0dcb-480f-9d9e-c07522918944",
+    "name": "CursosDesarrollo",
+    "commands": [{
+      "id": "7eeb882a-855c-4d22-92f8-62630e39c722",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bca5dfc-e5e8-49f2-b68f-34f0bd2742f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d10d93d9-2407-487d-a63b-8df686d1c2cc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#part-PP > img",
+      "targets": [
+        ["css=#part-PP > img", "css:finder"],
+        ["xpath=//button[@id='part-PP']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58138fd-84bf-4cae-874c-7aceea8d9eb5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#part-PSOE > img",
+      "targets": [
+        ["css=#part-PSOE > img", "css:finder"],
+        ["xpath=//button[@id='part-PSOE']/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2568eb3a-8613-4699-8281-71ff57100604",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=part-Podemos",
+      "targets": [
+        ["id=part-Podemos", "id"],
+        ["css=#part-Podemos", "css:finder"],
+        ["xpath=//button[@id='part-Podemos']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'35')]", "xpath:innerText"]
+      ],
+      "value": "35"
+    }]
+  }],
+  "suites": [{
+    "id": "26f10436-e029-410b-a95a-7f505da8637b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea494260-0dcb-480f-9d9e-c07522918944"]
+  }],
+  "urls": ["https://cursosdedesarrollo.com/"],
+  "plugins": []
+}
